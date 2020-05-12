@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \begin{loglogaxis}[
+        xlabel=Rozmiar problemu,
+        ylabel=Czas wykonania (ms),
+        width=0.7*\columnwidth,
+        legend pos=north east]
+        \addplot table[mark=*, x index=0, y index=1] {results/cpu_gpu_performance.dat};
+        \legend{cpu}
+    \end{loglogaxis}
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        xlabel=Liczba bloków,
+        ylabel=Czas wykonania (ms),
+        width=0.7*\columnwidth,
+        legend pos=north east]
+        \addplot table[mark=*, x index=0, y index=1] {results/gpu_block_performance.dat};
+    \end{axis}
+\end{tikzpicture}
